@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Salon de Beauté - Contact</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <nav>
+      <ul class="nav-list">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h1>Contactez-nous</h1>
+
+    <section>
+      <h2>Coordonnées</h2>
+      <p>Vous pouvez nous joindre par téléphone, email ou via le formulaire ci-dessous.</p>
+      <ul>
+        <li><strong>Téléphone :</strong> +237 6 51 08 71 99</li>
+        <li><strong>Email :</strong> salon_de_beaute@gmail.com</li>
+        <li><strong>Adresse :</strong> Yaounde - Cameroun</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Formulaire de contact</h2>
+      <form id="contactForm" novalidate>
+        <label for="name">Nom complet</label>
+        <input type="text" id="name" name="name" required minlength="2" />
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" required minlength="10"></textarea>
+
+        <button type="submit" class="btn">Envoyer</button>
+        <p id="formMessage" class="form-message"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Salon de Beauté. Tous droits réservés.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
